@@ -1,0 +1,15 @@
+rootProject.name = 'PolyvRNCloudClassDemo'
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+include ':react-native-reanimated'
+project(':react-native-reanimated').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-reanimated/android')
+
+include ':app'
+//polyv多场景通用模块
+include ':polyvLiveCommonModul'
+//云课堂场景（可选）
+include ':polyvLiveCloudClassScene'
+//直播带货场景（可选）
+include ':polyvLiveEcommerceScene'
+//手机开播场景（可选）
+include ':polyvLiveStreamerScene'
